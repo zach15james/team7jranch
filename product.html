@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zachary Robert James</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <my-header></my-header>
+
+  <div class="container">
+    <div class="services-section">
+      <h2>Archive</h2>
+				<p><i>Fair Use Notice: This material is made available for educational purposes, research, commentary, criticism, and scholarshiip, as provided for under Section 107 of the US Copyright Law. This site does not claim ownership of any third-party content referenced within, and such content is used under the fair use doctrine. If you believe any content infringes your copyright, please contact us, and the issue will be removed or resolved immediately.</i></p>
+      <div class="services-container">
+        <div class="archive-sect">
+          <div class="sort-cont">
+            <h3>Literary Synthesis</h3>
+            <div class="sort">
+              <p>Sort:
+                <button class="filter-btn" onclick="toggleFilter(this, 'io-psych', 'lit-syn-cont')">I/O Psyc.</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'marketing', 'lit-syn-cont')">Marketing</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'biography', 'lit-syn-cont')">Biography</button>
+                <button class="filter-btn"
+                  onclick="toggleFilter(this, 'philosophy', 'lit-syn-cont')">Philosophy</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'history', 'lit-syn-cont')">History</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'science', 'lit-syn-cont')">Science</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'political-theory', 'lit-syn-cont')">Political
+                  Theory</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'theology', 'lit-syn-cont')">Theology</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="lit-syn-cont">
+            <a href="/archive/literary-synthesis/ideal-team-player.html">How to be a Team Player: Notes from Patrick
+              Lencioni's <i>Ideal Team Player</i></a>
+            <a href="/archive/literary-synthesis/deep-work.html">Depth Necessity: Cal Newport's <i>Deep Work</i>
+              Hypothesis - in Light of the Exponential Advancement in Automation</a>
+            <a href="/archive/literary-synthesis/designing-orgs-inforich-world.html">Thoughts on Herbert A. Simon, Karl
+              W. Deutsch, Martin Shubik, and Emilio Q. Daddario's discussion on Organizational Design in an
+              'Information-Rich World'</a>
+							<a href="/archive/literary-synthesis/logic-right-use-of-reason.html">Watts on <i>How to Think</i></a>
+					</div>
+        </div>
+
+        <div class="archive-sect">
+          <div class="sort-cont">
+            <h3>Writings</h3>
+            <div class="sort">
+              <p>Sort:
+                <button class="filter-btn" onclick="toggleFilter(this, 'ai-ethics', 'writings-cont')">AI Ethics</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'aba', 'writings-cont')">ABA</button>
+                <button class="filter-btn"
+                  onclick="toggleFilter(this, 'psychology', 'writings-cont')">Marketing</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'history', 'writings-cont')">History</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'science', 'writings-cont')">Science</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'political-theory', 'writings-cont')">Political
+                  Theory</button>
+                <button class="filter-btn" onclick="toggleFilter(this, 'theology', 'writings-cont')">Theology</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="writings-cont">
+            <a href="/archive/essays/template.html">Template</a>
+          </div>
+        </div>
+
+        <div class="archive-sect">
+          <h3>Course Notes</h3>
+          <p>A resource to help me retain my knowledge and for others as well.</p>
+
+          <div class="sort">
+            <p>Sort:
+              <button class="filter-btn" onclick="toggleFilter(this, 'math', 'course-notes-cont')">Math</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'cs', 'course-notes-cont')">Computer
+                Science</button>
+              <button class="filter-btn"
+                onclick="toggleFilter(this, 'psychology', 'course-notes-cont')">Psychology</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'critical-analysis', 'course-notes-cont')">Critical
+                Analysis</button>
+            </p>
+          </div>
+          <div class="course-notes-cont">
+            <a class="math" href="/archive/course-notes/calculus.html">Calculus</a>
+            <a class="psychology" href="/archive/course-notes/io-psychology.html">Industrial Organizational
+              Psychology</a>
+            <a class="cs" href="/archive/course-notes/operating_systems.html">Operating Systems</a>
+          </div>
+        </div>
+
+        <div class="archive-sect">
+          <h3>Scripts & Software Projects</h3>
+          <p>Applications and scripts I have built that you may be able to get use from.</p>
+          <div class="sort">
+            <p>Sort:
+              <button class="filter-btn" onclick="toggleFilter(this, 'script', 'apps-scripts-cont')">Scripts</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'application', 'apps-scripts-cont')">Applications</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'model', 'apps-scripts-cont')">Models</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'icpc-problem-solutions', 'apps-scripts-cont')">ICPC Problem Solutions</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'library', 'apps-scripts-cont')">Libraries</button>
+              <button class="filter-btn" onclick="toggleFilter(this, 'implementation', 'apps-scripts-cont')">Implementation</button>
+            </p>
+          </div>
+          <div class="apps-scripts-cont">
+            <a href="#" class="python script">More coming soon...</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <my-footer></my-footer>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>
