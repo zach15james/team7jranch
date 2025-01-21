@@ -164,7 +164,8 @@ h2 {
 }
 
 .custom-db {
-  background-color: rgb(255, 206, 0);
+  color: var(--text_color);
+  background-color: rgb(0, 0, 0);
   border-radius: 5px 5px 0 0;
   padding: 1px 15px;
 }
@@ -172,12 +173,13 @@ h2 {
 .automated-reporting,
 .custom-swe {
   background-color: var(--core_background_color);
-  color: white;
+  color: var(--text_color);
   padding: 1px 15px;
 }
 
 .wf-automation {
-  background-color: rgb(255, 206, 0);
+  color: var(--text_color);
+  background-color: rgb(0, 0, 0);
   padding: 1px 15px;
 }
 
@@ -346,6 +348,8 @@ a:hover {
   max-width: 30px;
   max-height: 30px;
 }
+
+
 
 @media (max-width: 900px) {
   .container {
