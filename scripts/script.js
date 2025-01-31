@@ -1,8 +1,8 @@
-// hugging face login:
-
-// email: info@agapebloom.customElements
-// password: Eatrealfood!1
-
+//
+// Site-wide header and footer script
+// (Ⓒ Zachary R. James, Agape Bloom, Team 7J Ranch)
+// (@team7jranch)
+//
 
 // Defines my-header for the template header
 class myHeader extends HTMLElement {
@@ -10,13 +10,12 @@ class myHeader extends HTMLElement {
     this.innerHTML = `
       <header class="header">
         <div class="header-container">
-          <a href="/index.html"><img class="signature-image" src="/archive/images/brand_assets/t7j_script_logo_under_center.svg"
+          <a href="/index.html"><img class="main-logo-image" src="/archive/images/brand_assets/t7j_script_logo_under_center.svg"
               alt="Team 7J Ranch" /></a>
           <nav>
             <ul>
               <li><a href="/contact.html">Contact</a></li>
               <li><a href="/about.html">About</a></li>
-              <li><a href="/product.html">Product</a></li>
             </ul>
           </nav>
         </div>
@@ -46,53 +45,19 @@ customElements.define('my-header', myHeader);
 customElements.define('my-footer', myFooter);
 
 
-// Your existing functions
-let activeFilters = [];
-
-function toggleFilter(button, category, parent) {
-  button.classList.toggle("active");
-
-  const index = activeFilters.indexOf(category);
-  if (index > -1) {
-    activeFilters.splice(index, 1);
-  } else {
-    activeFilters.push(category);
+// Method to activate / deactivate landing screen
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("my-header");
+  const landingScreen = document.querySelector(".landing-screen");
+  
+  function checkScroll() {
+      const triggerHeight = landingScreen.offsetHeight; // Height of the landing screen
+      if (window.scrollY > triggerHeight) {
+          header.classList.add("visible");
+      } else {
+          header.classList.remove("visible");
+      }
   }
 
-  if (activeFilters.length === 0) {
-    document
-      .querySelectorAll(".filter-btn")
-      .forEach((btn) => btn.classList.remove("active"));
-  }
-
-  filterAndSortLinks(parent, "a");
-}
-
-function filterAndSortLinks(containerId, tagName) {
-  var container = document.querySelector("." + containerId);
-  var elements = Array.from(container.getElementsByTagName(tagName));
-
-  elements.forEach((element) => (element.style.display = "none"));
-
-  if (activeFilters.length > 0) {
-    elements
-      .filter((element) =>
-        activeFilters.some((category) => element.classList.contains(category))
-      )
-      .forEach((element) => (element.style.display = ""));
-  } else {
-    elements.forEach((element) => (element.style.display = ""));
-  }
-}
-
-function resetFilters() {
-  activeFilters = [];
-
-  document
-    .querySelectorAll(".filter-btn")
-    .forEach((button) => button.classList.remove("active"));
-
-  filterAndSortLinks("apps-scripts-cont", "a");
-}
-
-function testButtonClick() { alert("Button clicked!"); }
+  window.addEventListener("scroll", checkScroll);
+});

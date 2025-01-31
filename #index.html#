@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T7J Ranch</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/scripts/script.js" defer></script>
+</head>
+
+<body>
+  <my-header></my-header>
+  <div class="container">
+    <h1>Veteran-Owned, Family-Operated, Organic, Grass-Fed Beef (test here).</h1>
+    <p>Site currently under development changes.</p>
+    <!--
+n    <div class="cta-container">
+      <a href="#" class="cta-button">SCHEDULE A FREE DISCOVERY SESSION</a>
+    </div>
+    
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="custom-db">
+        <h3>Customized Data Management Systems</h3>
+        <p>We can take a look at your business and provide boutique and scalable systems to organize and streamline your
+          data - such as customer and employee records, inventory, sales, etc. - into a system that is easy to update,
+          access, and provides valuable insights.</p>
+      </div>
+      <div class="automated-reporting">
+        <h3>Automated Reporting or Document-Completion</h3>
+        <p>We can help you build, rebuild, or scale existing data you collect for your business to create sales reports,
+          expense summaries, rate cards, customer profiles, and automate your workflow.</p>
+      </div>
+      <div class="wf-automation">
+        <h3>Workflow Automation</h3>
+        <p>We can automate scheduling systems to allow customers to book appointments online, synced with their calendar
+          and yours. We can identify and automate repetitive tasks in your operation.</p>
+      </div>
+      <div class="custom-swe">
+        <h3>Custom Software Development</h3>
+        <p>Have an idea for an incredible Software-as-a-Service or proprietary, in-house machine learning model? We
+          would be happy to lend our half-a-decade of experience to build your vision with you.</p>
+      </div>
+      <div class="custom-data-harvesting">
+        <h3>Custom Data Harvesting</h3>
+        <p>We offer tailored data harvesting solutions to gather and analyze data from various sources such as social media, web scraping, and internal databases. Our services provide you with detailed reports and actionable insights to drive your business forward and make informed decisions.</p>
+      </div>
+    </div>
+  -->
+  </div>
+  <my-footer></my-footer>
+  
+</body>
+
+</html>
